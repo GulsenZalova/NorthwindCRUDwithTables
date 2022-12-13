@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbarList">
+                <li><a href="add.html" class="active">Add</a></li>
+                <li><a href="customerlist.html">Customer List</a></li>
+                <li><a href="orderlist.html">Order List</a></li>
+                <li><a href="supplierlist.html">Supplier List</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="alertMessage">Please enter information!!!</div>
+        <div class="add-area">
+            <div class="page-heading">
+                <h1>Add Catagory</h1>
+            </div>
+            <form class="add-form">
+                <input type="text" id="add-name" placeholder="Add Name">
+                <input type="text" id="add-description" placeholder="Add Description">
+                <input type="submit" id="add-btn">
+            </form>
+        </div>
+    </div>
+    <div id="toasts">
+           
+    </div>
+    <script src="JS/add.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Supplier List</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbarList">
+                <li><a href="add.html">Add</a></li>
+                <li><a href="customerlist.html">Customer List</a></li>
+                <li><a href="orderlist.html" >Order List</a></li>
+                <li><a href="supplierlist.html"  class="active">Supplier List</a></li>
+            </ul>
+        </nav>
+    </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>CompanyName</th>
+                    <th>ContactName</th>
+                    <th>ContactTitle</th>
+                    <th>Region</th>
+                </tr>
+            </thead>
+            <tbody class="supplierList">
+            </tbody>
+        </table>
+
+    <script src="./JS/main.js"></script>
+    <script src="./JS/supplierList.js"></script>
+</body>
+</html>
