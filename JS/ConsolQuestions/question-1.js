@@ -1,18 +1,9 @@
-// network.getAll('/products')
-//     .then(data => {
-//         console.log(data)
-//         const myPrice=data.sort((a,b)=>a.unitPrice-b.unitPrice)
-//         console.log(`En Pahalı Ürün` , myPrice[myPrice.length-1])
-//     })
 
+//  En pahalı ürünü bulun
 network.getAll('/products')
     .then(data => {
-        let stock=[]
-        data.forEach(element => {
-           stock.push(element.unitsInStock)
-        });
-        // unitsInStock
-        stock= data.reduce((a, b) => a + b)
-        console.log
+        const myPrice=data.sort((a,b)=>a.unitPrice-b.unitPrice)
+        console.log(`En Pahalı Ürün` , myPrice[myPrice.length-1].unitPrice)
     })
+
 
