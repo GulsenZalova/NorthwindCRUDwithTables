@@ -51,5 +51,14 @@ const network = {
                 response = res.data;
             })
         return response;
+    },
+    update: async (url, id ,obj) => {
+
+        let response = {};
+        await axiosInstance.put(`${url}/${id}`, obj)
+            .then(res => {
+                response = res.data;
+            })
+        return response;
     }
 }
