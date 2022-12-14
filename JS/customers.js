@@ -89,7 +89,9 @@ closeBtn.addEventListener("click",function(e){
     e.preventDefault()
     modal.classList.remove("active")
     network.update("/customers",id,newData )
-    .then((res)=>getAllElements()) 
+    .then((res)=>{
+        getAllElements()
+    }) 
 })
 
 }
